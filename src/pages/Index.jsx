@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Strawberry } from 'lucide-react';
+import { Cherry } from 'lucide-react';
 
 const strawberryTypes = [
   { name: "Sweet Seer", description: "Predicts positive events" },
@@ -49,7 +49,7 @@ const Index = () => {
             <Card key={berry.name} className={`cursor-pointer transition-all ${selectedBerry === berry ? 'ring-2 ring-red-400' : ''}`} onClick={() => selectBerry(berry)}>
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <Strawberry className="mr-2 h-6 w-6 text-red-500" />
+                  <Cherry className="mr-2 h-6 w-6 text-red-500" />
                   {berry.name}
                 </CardTitle>
               </CardHeader>
